@@ -25,14 +25,16 @@ public class onefoursixA {
         for (int i = 0; i < num.length() && flag; i++) {
             if (num.charAt(i) != '4' && num.charAt(i) != '7') {
                 flag = false;
-            } else if (i < num.length()/2) {
+            } else if (i < num.length() / 2) {
                 leftSum += Character.getNumericValue(num.charAt(i));
             } else {
                 rightSum += Character.getNumericValue(num.charAt(i));
             }
         }
 
-        if (leftSum != rightSum) flag = false;
+        if (leftSum != rightSum) {
+            flag = false;
+        }
 
         if (flag) {
             System.out.println("YES");
