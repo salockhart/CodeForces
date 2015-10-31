@@ -30,7 +30,7 @@ public class onefoursixB {
         }
 
         //BRUTE FORCE
-        for (int i = Integer.parseInt(a); repeat; i++) {
+        for (int i = Integer.parseInt(a)+1; repeat; i++) {
             int lastIndex = -1;
             boolean correct = true;
             a = (new Integer(i)).toString();
